@@ -8,7 +8,7 @@ pass_length=len(password)
 
 if pass_length < 6 :
     print("your password is weak! Try atleast 6 character.")
-elif (len(password) >= 8 and
+elif (pass_length >= 8 and
           re.search(r'[A-Z]', password) and 
           re.search(r'[a-z]', password) and 
           re.search(r'\d', password) and    
